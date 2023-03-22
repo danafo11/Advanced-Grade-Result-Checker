@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Grade Checker</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body {
+            background-image: url("Images/151_A_JuiceDrop.jpg");
+        }
+        
+        #button {
+            margin-left: 44%;
+        }
+
+        @media (max-width: 500px) {
+            #button {
+                margin-left: 35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con border rounded shadow col-lg-7 mx-auto mt-2 p-2">
+        <h3 class="text-center text-light">Grade Result Checker</h3>
+        <div class="form-floating mb-3 col-lg-4 mx-auto">
+            <input type="number" class="form-control" id="yourScore" placeholder="e.g 100">
+            <label for="floatingInput">Enter your score here</label>
+        </div>
+        <button class="btn btn-primary" onclick="checkGrade()" id="button">Check Grade</button>
+
+        <div id="showScore" class="mt-2 bg-light text-center rounded col-lg-4 col-sm-6 p-1 mx-auto">You will see your score here</div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
